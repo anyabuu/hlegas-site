@@ -1,0 +1,65 @@
+.hero {
+    background: map-get($gradient-colors,top-soft);
+    min-height: 100vh;
+    color: white;
+}
+
+.header__container {
+    padding-top: #{$padding-page}px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__navigation{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: (14/12);
+}
+
+.header__options {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;   
+}
+
+.header__options-adress {
+    font-weight: 400;
+}
+
+.header__list {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+.hero-content__container {
+    background: center no-repeat url("../img/ps_hero_background.svg");
+
+}
+
+.hero-content__title {
+    font-weight: 400;
+    font-size: 3.8rem;
+    line-height: (44/38);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    text-align: center;
+    padding-top: 240px;
+    padding-bottom: 290px;
+}
+
+.hero__scroller {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+

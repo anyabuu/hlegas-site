@@ -1,0 +1,106 @@
+.experience-services {
+    color: var(--color-white);
+    background-image: var(--color-supersoft);
+    padding-top: #{$padding-section}px;
+    padding-bottom: #{$padding-section}px;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.experience__container{
+    display: flex;
+    width: 1200px;
+    gap:40px;
+    padding-bottom: #{$padding-section}px;
+}
+
+.experience__characteristics {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience__title {
+    @include text-head;
+    color: var(--color-grey-text);
+    font-weight: 700;  
+    text-align: right;
+
+    &:hover {
+        background: var(--color-red-text-reverse);
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        cursor: default;
+    }
+}
+
+.gradient-title {
+        background: var(--color-red-text-reverse);
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+}
+
+.experience__red-scale {
+    transform: translate(14277%);
+    position: absolute;
+}
+
+.experience__characteristics-content {
+    display: flex;
+    width: 650px;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.experience__subtitle {
+    @include text-title;
+    font-weight: 600;
+}
+
+.experience__text {
+    @include text-introduction;
+    font-weight: 400;
+}
+
+
+.services__topic-link {
+    @include section-topic;
+    padding-bottom: 3px;
+}
+
+.services__title {
+    @include text-head;
+    font-weight: 700;
+    background: var(--color-red-text);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 68px;
+}
+
+.services__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.services__cards-item {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 18px;
+}
+
+.services__card-img {
+    width: 92px;
+    height: 92px;
+}
+
+.services__card-subtitle {
+    color: var(--color-active-regular);
+    @include text-subheader;
+    font-weight: 600;
+}
+
+.services__card-text {
+    @include text-body;
+}

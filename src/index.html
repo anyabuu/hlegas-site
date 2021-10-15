@@ -13,17 +13,39 @@
 
 <!--START HERO-->
         <section class="hero">
-            <div class="container hero__container">
+            <div class="hero__container">
                 <header class="header">
-                    <div class="header__container">
+                    <div class="container header__container">
                         <a class="logo" href="#">
                             <img class="logo__image" src="img/logo_header.svg" alt="this is logo">
                         </a>
                         <nav class="header__navigation">
                             <ul class="header__options">
+
+
+                                
+
+
                                 <li class="header__options-item">
-                                    <img class="header__languages-img" src="img/active_marker.svg" alt="active marker">
-                                    УК   РУ   EN
+                                    <label class="lang__label">
+                                        <input type="radio" value="ук" class="lang__input" name="lang">
+                                        <span class="lang__txt">
+                                            ук
+                                        </span>
+                                    </label>
+                                    <label class="lang__label">
+                                        <input type="radio" value="ру" class="lang__input" name="lang">
+                                        <span class="lang__txt">
+                                            ру
+                                        </span>
+                                    </label>
+                                    <label class="lang__label">
+                                        <input type="radio" value="en" class="lang__input" name="lang">
+                                        <span class="lang__txt">
+                                            en
+                                        </span>
+                                    </label>
+    
                                 </li>
                                 <li class="header__options-item">
                                     <img class="header__option-dot" src="img/dot_separator.svg" alt="active marker">
@@ -52,27 +74,27 @@
                             </ul>
                             <ul class="header__list">
                                 <li class="header__list-item">
-                                    <a class="header__link">
+                                    <a class="header__link" href="#">
                                         о нас
                                     </a>
                                 </li>
                                 <li class="header__list-item">
-                                    <a class="header__link">
+                                    <a class="header__link" href="#">
                                         послуги 
                                     </a>
                                 </li>
                                 <li class="header__list-item">
-                                    <a class="header__link">
+                                    <a class="header__link" href="#">
                                         команда
                                     </a>
                                 </li>
                                 <li class="header__list-item">
-                                    <a class="header__link">
+                                    <a class="header__link" href="#">
                                         публікації
                                     </a>
                                 </li>
                                 <li class="header__list-item">
-                                    <a class="header__link">
+                                    <a class="header__link" href="#">
                                         контакти
                                     </a>
                                 </li>
@@ -95,48 +117,117 @@
 
 <!--END HERO-->
 
-<!--START BANNER SECTION-->
+<!--START EXPERIENCE-SERVICES SECTION-->
 
-        <section class="banner">
-            <div class="container banner__container">
-                <ul class="banner__characteristics">
-                    <li class="banner__characteristics-item">
-                        <h2 class="banner__title">
+        <section class="experience-services">
+            <div class="container experience__container">
+                <ul class="experience__characteristics">
+                    <li class="experience__characteristics-item">
+                        <h2 class="experience__title gradient-title">
                             Послідовні
                         </h2>
                     </li>
-                    <li class="banner__characteristics-item">
-                        <h2 class="banner__title">
+                    <li class="experience__characteristics-item">
+                        <h2 class="experience__title">
                             Клієнтоорієнтовані
                         </h2>
                     </li>
-                    <li class="banner__characteristics-item">
-                        <h2 class="banner__title">
+                    <li class="experience__characteristics-item">
+                        <h2 class="experience__title">
                             Інноваційні
                         </h2>
                     </li>
-                    <li class="banner__characteristics-item">
-                        <h2 class="banner__title">
+                    <li class="experience__characteristics-item">
+                        <h2 class="experience__title">
                             Бізнес-орієнтовані
                             юристи
                         </h2>
                     </li>
                 </ul>
-                <img class="banner__white-scale" src="img/white_scale.svg" alt="this is scale">
-                <img class="banner__red-scale" src="img/red_scale.svg" alt="this is scale">
-                <div class="banner__characteristics-content">
-                    <h3 class="banner__subtitle">
+                <img class="experience__white-scale" src="img/white_scale.svg" alt="this is scale">
+                <img class="experience__red-scale" src="img/red_scale.svg" alt="this is scale">
+                <div class="experience__characteristics-content">
+                    <h3 class="experience__subtitle">
                         Перевертаємо уявлення про юридичні послуги
                     </h3>
-                    <p class="banner__text text">
+                    <p class="experience__text text">
                         Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування морського права в Україні.
                     </p>
                 </div>
             </div>
+
+            <div class="container services__container">
+                <a class="services__topic-link" href="#">
+                    Послуги     <i class="services__arrow-link topic-arrow-right"></i>
+                </a>
+                <h2 class="services__title">
+                    Що ми вміємо робити краще за інших?
+                </h2>
+                <ul class="services__cards">
+                    <li class="services__cards-item">
+                        <img class="services__card-img" src="img/hand_bag_icon.svg">
+                        <h3 class="services__card-subtitle">
+                            IT та електронна комерція
+                        </h3>
+                        <p class="services__card-text">
+                            Нескінчений потік договорів, податкові питання, трудові відносини, корпоративні папери — юридична робота відволікає вас від ведення бізнесу. Але роботи не так вже й багато, щоб наймати інхауз-юриста. 
+                        </p>
+                    </li>
+                    <li class="services__cards-item">
+                        <img class="services__card-img" src="img/bag_icon.svg">
+                        <h3 class="services__card-subtitle">
+                            Комплексний щоденний юридичний супровід
+                        </h3>
+                        <p class="services__card-text">
+                            До того ж, з часом робота стане однотипною і нецікавою для штатного юриста. А ще ми добре знаємо, як важко в Україні знайти хорошого кандидата з досвідом у сфері інформаційних технологій.
+                        </p>
+                    </li>
+                    <li class="services__cards-item">
+                        <img class="services__card-img" src="img/molecule_icon.svg">
+                        <h3 class="services__card-subtitle">
+                            Структуризація корпоративних відносин
+                        </h3>
+                        <p class="services__card-text">
+                            Замість просто надавати юридичні послуги, ми закріпимо юриста або цілу команду, які впишуться в повсякденне життя вашої компанії. 
+                        </p>
+                    </li>
+                    <li class="services__cards-item">
+                        <img class="services__card-img" src="img/hands_icon.svg">
+                        <h3 class="services__card-subtitle">
+                            Побудовa договірних відносин
+                        </h3>
+                        <p class="services__card-text">
+                            Раз на тиждень, чи тиждень на місяць у вас під боком є ваш власний юрист. Будь-хто в компанії може впіймати його біля кавоварки і просто поговорити про поточні справи замість очікування статусу update.
+                        </p>
+                    </li>
+                    <li class="services__cards-item">
+                        <img class="services__card-img" src="img/protection_icon.svg">
+                        <h3 class="services__card-subtitle">
+                            Захист бізнесу, інтелектуальної власності
+                        </h3>
+                        <p class="services__card-text">
+                            А весь інший час він працюватиме над новими різноплановими проектами, тому вже точно не зупиниться в професійному розвитку. Так чи інакше, на вас працюватиме весь Axon Partners замість корпоративного юриста.
+                        </p>
+                    </li>
+                    <li class="services__cards-item">
+                        <img class="services__card-img" src="img/microscope_icon.svg">
+                        <h3 class="services__card-subtitle">
+                            Судове представництво
+                        </h3>
+                        <p class="services__card-text">
+                            Невелика компанія, середнього розміру, чи вже лідер ринку? Локальний бізнес або транснаціональна компанія? Маєте власний юридичний відділ, чи ні?
+                        </p>
+                    </li>
+
+                </ul>
+                
+            </div>
+
+
         </section>
 
 
-<!--END BANNER SECTION-->
+<!--END SERVICES SECTION-->
 
     </main>
 

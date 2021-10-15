@@ -1,7 +1,16 @@
 .hero {
-    background: map-get($gradient-colors,top-soft);
     min-height: 100vh;
-    color: white;
+    color: var(--color-white);
+    background-image: var(--color-top-soft);
+    display:flex;
+    flex-direction: column;
+    }
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    flex-grow: 1;
 }
 
 .header__container {
@@ -29,6 +38,23 @@
     gap: 10px;   
 }
 
+.lang {
+    display:flex;
+}
+
+
+
+.lang__input {
+    -webkit-appearence: none;
+    position:absolute;
+
+    &:checked ~ .lang__txt {
+        background-color: #F0145A;
+    } 
+}
+
+
+
 .header__options-adress {
     font-weight: 400;
 }
@@ -39,10 +65,19 @@
     justify-content: flex-end;
 }
 
-.hero-content__container {
-    background: center no-repeat url("../img/ps_hero_background.svg");
-
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-image: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%), 
+                        url("../img/ps_hero_background.svg"),
+                        url("../img/p_hero_background.svg");
+    background-repeat: no-repeat;
+    background-position: bottom, top, center;
 }
+
+
+
 
 .hero-content__title {
     font-weight: 400;

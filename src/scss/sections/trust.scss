@@ -1,0 +1,17 @@
+.trust__container {
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+.trust__title {
+    @include text-caption;
+    text-align: center;
+    color: var(--color-main);
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.trust__table {
+    display: flex;
+    flex-wrap: wrap;
+
+}

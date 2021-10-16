@@ -390,6 +390,11 @@ body {
   margin-right: auto;
   margin-left: auto; }
 
+.big-container {
+  width: 1440px;
+  margin-right: auto;
+  margin-left: auto; }
+
 .hero {
   min-height: 100vh;
   color: var(--color-white);
@@ -694,3 +699,20 @@ body {
   line-height: 1.44444;
   color: var(--color-grey-text);
   font-weight: 400; }
+
+.trust__container {
+  padding-bottom: 40px;
+  padding-top: 30px; }
+
+.trust__title {
+  font-size: 1.4rem;
+  line-height: 1.07143;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-main);
+  font-weight: bold;
+  padding-bottom: 30px; }
+
+.trust__table {
+  display: flex;
+  flex-wrap: wrap; }

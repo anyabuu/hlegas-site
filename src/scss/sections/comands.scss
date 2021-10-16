@@ -1,0 +1,54 @@
+.comand__container {
+    margin-top: 60px;
+    margin-bottom: 41px;
+}
+
+.comand__card {
+    background-color: #F5F5FA;
+    border-radius: 12px;
+    display: flex;
+    gap: 40px;
+}
+
+.comand__content {
+    padding-top: 40px;
+}
+
+.comand__topic-link {
+    @include section-topic;
+    color: var(--color-active-regular);
+    padding-bottom: 3px;
+    
+}
+
+.comand__title {
+    @include text-head;
+    font-weight: bold;
+    padding-bottom: 20px;
+    background: var(--color-red-text);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.comand__text {
+    color: var(--color-grey-text);
+    @include text-small;
+}
+
+.comand__text--small {
+    padding-top: 5px;
+    font-size: 1.6rem;
+    line-height: (22/16);
+}
+
+.comand__menu-dots {
+    display: flex;
+    gap:14px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+
+
+
+

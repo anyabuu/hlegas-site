@@ -16,6 +16,7 @@
 @mixin text-caption {
     font-size: 1.4rem;
     line-height: (15/14);
+    text-transform: uppercase;
 }
 
 @mixin text-small {
@@ -36,11 +37,10 @@
 
 @mixin section-topic {
     @include text-caption;
-    opacity: 50%;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
-    
+
     i {
         border: solid;
         border-width: 0 3px 3px 0;

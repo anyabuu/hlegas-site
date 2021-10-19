@@ -1,0 +1,77 @@
+.footer {
+    background-color: var(--color-grey-bg);
+}
+
+.footer__container {
+    padding-top: 34px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+.footer__location {
+    display: flex;
+    gap: 13px;
+    align-items: baseline;
+}
+
+.footer__adress {
+    font-weight: 400;
+    @include paragraph-min;
+    color: var(--color-main);
+    
+    
+  &::after {
+        @include circle;
+        background-color: var(--color-grey-text);
+        margin-left: 18px;
+     } 
+}
+
+.footer__map {
+    font-weight: bold;
+    color: var(--color-active-regular);
+    @include text-caption;
+    letter-spacing: 1px;
+}
+
+.footer__contacts {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.footer__fb-link::after {
+    @include circle;
+    background-color: var(--color-grey-text);
+    margin-left: 10px;
+}
+
+.footer__number {
+    @include paragraph-min;
+    color: var(--color-alternative);
+    font-weight: bold;
+
+    &::after {
+        @include circle;
+        background-color: var(--color-grey-text);
+        margin-left: 10px;
+    }
+}
+
+.footer__mail {
+    font-weight: bold;
+    color: var(--color-active-regular);
+    @include paragraph-min;
+}
+
+.footer__company {
+    @include paragraph-min;
+    color: var(--color-grey-text);
+}

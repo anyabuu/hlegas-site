@@ -828,3 +828,83 @@ body {
   font-size: 1.6rem;
   line-height: 1.375;
   padding-top: 15px; }
+
+.footer {
+  background-color: var(--color-grey-bg); }
+
+.footer__container {
+  padding-top: 34px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between; }
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 31px; }
+
+.footer__location {
+  display: flex;
+  gap: 13px;
+  align-items: baseline; }
+
+.footer__adress {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.375;
+  color: var(--color-main); }
+  .footer__adress::after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-grey-text);
+    margin-left: 18px; }
+
+.footer__map {
+  font-weight: bold;
+  color: var(--color-active-regular);
+  font-size: 1.4rem;
+  line-height: 1.07143;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.footer__contacts {
+  display: flex;
+  gap: 10px;
+  align-items: baseline; }
+
+.footer__fb-link::after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-grey-text);
+  margin-left: 10px; }
+
+.footer__number {
+  font-size: 1.6rem;
+  line-height: 1.375;
+  color: var(--color-alternative);
+  font-weight: bold; }
+  .footer__number::after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-grey-text);
+    margin-left: 10px; }
+
+.footer__mail {
+  font-weight: bold;
+  color: var(--color-active-regular);
+  font-size: 1.6rem;
+  line-height: 1.375; }
+
+.footer__company {
+  font-size: 1.6rem;
+  line-height: 1.375;
+  color: var(--color-grey-text); }

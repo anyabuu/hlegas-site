@@ -16,18 +16,14 @@
 
 .comand__topic-link {
     @include section-topic;
-    color: var(--color-active-regular);
-    padding-bottom: 3px;
-    
+    color: var(--color-active-regular);   
 }
 
 .comand__title {
     @include text-head;
+    @include text-gradient;
     font-weight: bold;
     padding-bottom: 20px;
-    background: var(--color-red-text);
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent;
 }
 
 .comand__text {

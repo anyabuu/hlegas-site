@@ -34,12 +34,25 @@
     line-height: (30/21);
 }
 
+@mixin paragraph-min {
+    font-size: 1.6rem;
+    line-height: (22/16);
+}
+
+
+@mixin text-gradient {
+    background: var(--color-red-text);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
 
 @mixin section-topic {
     @include text-caption;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
+    padding-bottom: 3px;
 
     i {
         border: solid;

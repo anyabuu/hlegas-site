@@ -1,0 +1,18 @@
+@mixin button {
+    display: inline-block;
+    width: 250px;
+    border: 1px solid var(--color-active-regular);
+    padding-bottom: 17px;
+    padding-top: 17px;
+    background: var(--color-active-regular);
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;  
+    text-align: center;
+}
+
+@mixin button-content {
+    color: var( --color-white);
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: (17/14);
+}

@@ -46,8 +46,13 @@
 
 .experience__characteristics {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 20px;
+    border-right: 4px solid var(--color-white);
+    padding:40px;
+    height: 303px;
+
 }
 
 .experience__title {
@@ -55,18 +60,15 @@
     color: var(--color-grey-text);
     font-weight: 700;  
     text-align: right;
-
+    
     &:hover {
         @include text-gradient;
          cursor: default;
+         border-right: 4px solid var(--color-accent);
+         padding-right:40px;
      }
 }
 
-
-.experience__red-scale {
-    transform: translate(14277%);
-    position: absolute;
-}
 
 .experience__characteristics-content {
     display: flex;

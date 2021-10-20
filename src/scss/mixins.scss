@@ -19,6 +19,11 @@
     text-transform: uppercase;
 }
 
+@mixin text-nav {
+    font-size: 1.4rem;
+    line-height: (15/14);
+}
+
 @mixin text-small {
     font-size: 1.8rem;
     line-height: (21/18);

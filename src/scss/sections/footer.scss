@@ -40,6 +40,7 @@
     color: var(--color-active-regular);
     @include text-caption;
     letter-spacing: 1px;
+    @include hover-accent-text;
 }
 
 .footer__contacts {
@@ -48,10 +49,26 @@
     align-items: baseline;
 }
 
-.footer__fb-link::after {
-    @include circle;
-    background-color: var(--color-grey-text);
-    margin-left: 10px;
+
+.footer__fb-link {
+    &::after {
+        @include circle;
+        background-color: var(--color-grey-text);
+        margin-left: 10px;
+    }
+
+    .footer__fb-logo-hover {
+        display: none;
+    }
+
+    &:hover {
+        .footer__fb-logo-hover {
+            display: inline;
+        }
+        .footer__fb-logo {
+            display: none;
+        }
+    }
 }
 
 .footer__number {
@@ -70,6 +87,7 @@
     font-weight: bold;
     color: var(--color-active-regular);
     @include paragraph-min;
+    @include hover-accent-text;
 }
 
 .footer__company {

@@ -56,6 +56,13 @@
     appearance: none;
     position:absolute;
 
+    &:hover ~ .lang__txt {
+        background-color: var(--color-grey-bg-alt);
+        color:#B3B3BA;
+        padding: 5px;
+        border-radius: 8px;
+    }
+
     &:checked ~ .lang__txt {
         background-color: var(--color-accent);
         padding: 5px;
@@ -73,6 +80,24 @@
     font-weight: 400;
 }
 
+.header__options-facebook-link {
+    .header__facebook-img-hover {
+        display: none;
+    }
+
+    &:hover {
+        .header__facebook-img {
+            display: none;
+        }
+
+        .header__facebook-img-hover {
+            display: inline;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
 .header__list {
     display: flex;
     gap: 15px;
@@ -81,15 +106,19 @@
     font-weight: 600;
 }
 
+.header__list-item {
+    @include hover-accent-text;
+}
+
 .hero-content{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     background-image: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%), 
-                        url("../img/ps_hero_background.svg"),
-                        url("../img/p_hero_background.svg");
+                        url("../img/p_hero_background.svg"),                  
+                        url("../img/ps_hero_background.svg");
     background-repeat: no-repeat;
-    background-position: bottom, top, center;
+    background-position: bottom, center, top;
 }
 
 .hero-content__title {
@@ -108,5 +137,6 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
+    margin-bottom: 40px;
 }
 

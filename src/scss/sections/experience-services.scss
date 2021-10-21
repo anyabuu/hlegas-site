@@ -60,12 +60,15 @@
     color: var(--color-grey-text);
     font-weight: 700;  
     text-align: right;
-    
+    padding-right:40px;
+    border-right: 4px solid transparent;
+    transform: translate(44.4px);
+
     &:hover {
         @include text-gradient;
          cursor: default;
-         border-right: 4px solid var(--color-accent);
-         padding-right:40px;
+         border-right-color: var(--color-accent);
+        
      }
 }
 

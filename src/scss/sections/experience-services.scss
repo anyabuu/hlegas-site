@@ -35,13 +35,29 @@
     padding-top: #{$padding-section}px;
     padding-bottom: #{$padding-section}px;
     border-radius: 0px 0px 12px 12px;
+
+    @include media-phone {
+        padding-top: 20px;
+    }
 }
 
-.experience__container{
+.experience__container {
     display: flex;
     width: 1200px;
     gap:40px;
     padding-bottom: #{$padding-section}px;
+
+    @include media-phone {
+        width: 85%;
+        flex-direction: column;
+        gap:13px;
+
+        &::after {
+            @include circle;
+            background-color: var(--color-grey-separator);
+            align-self: center;
+        }
+    }
 }
 
 .experience__characteristics {
@@ -52,8 +68,24 @@
     border-right: 4px solid var(--color-white);
     padding:40px;
     height: 303px;
-
+    
+    @include media-phone {
+        display: block;
+        height: auto;
+        padding: 0px;
+        border:none;
+    }
+    
 }
+
+
+
+.experience__characteristics-item:nth-child(n+2) {
+    @include media-phone {
+        display: none;
+    }
+}
+
 
 .experience__title {
     @include text-head;
@@ -68,7 +100,16 @@
         @include text-gradient;
          cursor: default;
          border-right-color: var(--color-accent);
-        
+     }
+
+     @include media-phone {
+        text-align: left;
+        transform: none;
+        border: none;
+        @include text-caption;
+        letter-spacing: 1px;
+        @include text-gradient;
+        width: 35%;
      }
 }
 
@@ -79,16 +120,30 @@
     flex-direction: column;
     gap: 20px;
     justify-content: center;
+
+    @include media-phone {
+        width: auto;
+        gap: 15px;
+     }
 }
 
 .experience__subtitle {
     @include text-title;
     font-weight: 600;
+
+    @include media-phone {
+       font-size: 2.2rem;
+       line-height: (25/22);
+     }
 }
 
 .experience__text {
     @include text-introduction;
     font-weight: 400;
+
+    @include media-phone {
+        @include text-body;
+    }
 }
 
 
@@ -101,6 +156,11 @@
     @include text-head;
     font-weight: 700;
     padding-bottom: 68px;
+
+    @include media-phone {
+        @include text-title;
+        padding-bottom: 20px;
+    }
 }
 
 .services__title-inline  {
@@ -118,19 +178,39 @@
     flex-direction: column;
     width: 400px;
     gap: 18px;
+
+    @include media-phone {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
 }
 
 .services__card-img {
     width: 92px;
     height: 92px;
+
+    @include media-phone {
+        width: 64px; 
+    }
 }
 
 .services__card-subtitle {
     color: var(--color-active-regular);
     @include text-subheader;
     font-weight: 600;
+
+    @include media-phone {
+        @include text-small;
+        width: 260px;
+    }
 }
 
 .services__card-text {
     @include text-body;
+
+    @include media-phone {
+        @include paragraph-min;
+    }
 }

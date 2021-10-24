@@ -48,10 +48,14 @@ body {
     width: 1320px;
     margin-right: auto;
     margin-left: auto;
+
+    @include media-tablet {
+        width: 75%;
+    }
+
+    @include media-phone {
+        width: 85%;
+    }
 }
 
-.big-container {
-    width: 1440px;
-    margin-right: auto;
-    margin-left: auto;
-}
+

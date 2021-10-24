@@ -85,3 +85,15 @@
         color: var(--color-accent);
     }
 }
+
+@mixin media-tablet {
+    @media (max-width:1200px) {
+        @content;
+    }
+}
+
+@mixin media-phone {
+    @media (max-width:767px) {
+        @content;
+    }
+}

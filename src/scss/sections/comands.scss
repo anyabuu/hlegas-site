@@ -1,6 +1,12 @@
 .comand__container {
     margin-top: 60px;
     margin-bottom: 41px;
+
+    @include media-phone {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
 }
 
 .comand__card {
@@ -8,10 +14,25 @@
     border-radius: 12px;
     display: flex;
     gap: 40px;
+
+    @include media-phone {
+       flex-direction: column;
+    }
+}
+
+.comand__img {
+    @include media-phone {
+      display: none;
+    }
 }
 
 .comand__content {
     padding-top: 40px;
+
+    @include media-phone {
+        padding: 20px;
+      }
+
 }
 
 .comand__topic-link {
@@ -24,7 +45,12 @@
     @include text-gradient;
     font-weight: bold;
     padding-bottom: 20px;
+
+    @include media-phone {
+        @include text-title;
+    }
 }
+
 
 .comand__text {
     color: var(--color-grey-text);

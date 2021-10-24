@@ -7,6 +7,11 @@
     grid-template-columns: repeat(5, 1fr); 
     grid-template-rows: 57px 198px 198px;
     align-items: stretch;
+
+    @include media-phone {
+        display: flex;
+        flex-direction: column;
+    }
    
 }
 
@@ -50,6 +55,10 @@
     grid-row: 3/4;
     grid-column: 4/6;
     }
+
+    @include media-phone {
+        padding-top: 20px;
+    }
 }
 
 .case__title {
@@ -62,12 +71,21 @@
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+
+    @include media-phone {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 .case__block-title {
     @include text-subheader;
     color: var(--color-soft);
     font-weight: 600;
+
+    @include media-phone {
+        @include text-small;
+    }
 }
 
 .case__block-link {

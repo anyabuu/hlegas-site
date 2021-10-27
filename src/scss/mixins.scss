@@ -80,6 +80,28 @@
     border-radius: 50%;
 }
 
+@mixin dots-menu {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 14px;
+
+    .dot {
+        border: 8px solid var(--color-active-regular);
+        border-radius: 50%;
+        align-self: center;
+        opacity: 0.2;
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &:active {
+            opacity: 1;
+        }
+    }
+    }
+
 @mixin hover-accent-text {
     &:hover {
         color: var(--color-accent);

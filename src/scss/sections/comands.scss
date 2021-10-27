@@ -51,6 +51,22 @@
     }
 }
 
+.comand__img-wrapper {
+    @include media-phone {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+.comand__circle-img {
+    display: none; 
+
+    @include media-phone {
+        display: flex;
+    }
+}
+
 
 .comand__text {
     color: var(--color-grey-text);
@@ -63,11 +79,8 @@
     line-height: (22/16);
 }
 
-.comand__menu-dots {
-    display: flex;
-    gap:14px;
-    margin-top: 20px;
-    justify-content: center;
+.comand__dots-group {
+    @include dots-menu;
 }
 
 

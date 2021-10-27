@@ -45,20 +45,26 @@
     display: flex;
     width: 1200px;
     gap:40px;
-    padding-bottom: #{$padding-section}px;
+    padding-bottom: 80px;
 
     @include media-phone {
         width: 85%;
         flex-direction: column;
         gap:13px;
-
-        &::after {
-            @include circle;
-            background-color: var(--color-grey-separator);
-            align-self: center;
-        }
+        padding-bottom: 45px;
     }
 }
+
+.experience__dots-group { 
+    display: none;
+
+    @include media-phone {
+        @include dots-menu;
+        padding-top: 20px;
+    }
+}
+
+
 
 .experience__characteristics {
     display: flex;
@@ -74,18 +80,14 @@
         height: auto;
         padding: 0px;
         border:none;
-    }
-    
+    }  
 }
-
-
 
 .experience__characteristics-item:nth-child(n+2) {
     @include media-phone {
         display: none;
     }
 }
-
 
 .experience__title {
     @include text-head;
@@ -112,7 +114,6 @@
         width: 35%;
      }
 }
-
 
 .experience__characteristics-content {
     display: flex;

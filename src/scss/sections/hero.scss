@@ -67,8 +67,9 @@
     font-weight: 700;
     @include text-nav;  
 
+
     @include media-phone {
-       justify-content: space-between;
+        justify-content: space-between;
     }
 }
 
@@ -88,6 +89,16 @@
 
     &:last-child::after{
         display: none;
+    }
+
+    @include media-phone {
+        &:nth-child(2){
+            display: none;
+        }
+
+        &:nth-child(4){
+            display: none;
+        }
     }
 }
 
@@ -122,11 +133,6 @@
 
 .header__options-adress {
     font-weight: 400;
-
-    @include media-phone {
-        display: none;
-    }
-  
 }
 
 .header__options-tel {
@@ -151,10 +157,6 @@
             height: 24px;
         }
     }
-
-    @include media-phone {
-        display: none;
-    }
 }
 
 .header__nav-img {
@@ -163,7 +165,6 @@
     @include media-phone {
         display: block;
         width: 32px;
-
     }
 }
 
@@ -181,6 +182,11 @@
 
 .header__list-item {
     @include hover-accent-text;
+
+    &:active {
+        padding-bottom: 3px;
+        border-bottom: 3px solid var( --color-accent);
+    }
 }
 
 .hero-content{

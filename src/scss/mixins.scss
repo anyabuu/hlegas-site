@@ -108,6 +108,12 @@
     }
 }
 
+@mixin media-laptop-m {
+    @media (max-width:1320px) {
+        @content;
+    }
+}
+
 @mixin media-tablet {
     @media (max-width:1200px) {
         @content;

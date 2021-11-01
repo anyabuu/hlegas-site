@@ -42,6 +42,10 @@ html,
 body {
     font-family: "TTNorms";
     font-size: 10px;
+
+    @include media-tablet {
+        font-size: 9px;
+    }
 }
 
 .container {
@@ -50,11 +54,15 @@ body {
     margin-left: auto;
 
     @include media-tablet {
-        width: 75%;
+        width: 90%;
     }
 
     @include media-phone {
         width: 85%;
+    }
+
+    @include media-laptop-m {
+        width: 90%;
     }
 }
 

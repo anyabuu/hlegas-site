@@ -12,9 +12,10 @@
     justify-content: space-between;
     border-top: 4px solid var(--color-grey-separator);
 
-    @include media-phone {
+    @include media-tablet {
         flex-direction: column;
         align-items: center;
+        gap: 39px;
     }
 }
 

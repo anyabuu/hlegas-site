@@ -6,7 +6,6 @@
         margin-top: 20px;
         margin-bottom: 15px;
     }
-
 }
 
 .comand__card {
@@ -21,6 +20,11 @@
 }
 
 .comand__img {
+
+    @include media-tablet {
+        height: 310px;
+    }
+
     @include media-phone {
       display: none;
     }
@@ -29,10 +33,13 @@
 .comand__content {
     padding-top: 40px;
 
+    @include media-tablet {
+        padding-right: 35px;
+    }
+
     @include media-phone {
         padding: 20px;
       }
-
 }
 
 .comand__topic-link {
@@ -45,6 +52,10 @@
     @include text-gradient;
     font-weight: bold;
     padding-bottom: 20px;
+
+    @include media-tablet {
+        @include text-title;
+    }
 
     @include media-phone {
         @include text-title;
@@ -67,6 +78,11 @@
     }
 }
 
+.comand__img-description {
+    @include media-tablet {
+        padding-bottom: 25px;
+    }
+}
 
 .comand__text {
     color: var(--color-grey-text);

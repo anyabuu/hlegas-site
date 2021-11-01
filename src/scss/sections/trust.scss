@@ -15,6 +15,7 @@
     grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: repeat(3, 120px);
 
+
     @include media-phone {
         grid-template-columns: repeat(2, 1fr); 
         grid-template-rows: repeat(6, 1fr);
@@ -23,6 +24,9 @@
 
 .trust__img {
 
+    @include media-tablet {
+        width: 70%;
+    }
     @include media-phone {
         width: 50%;
     }

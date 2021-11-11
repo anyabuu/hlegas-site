@@ -1,0 +1,105 @@
+.posting-gdpr-article__container {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.posting-gdpr-article__image {
+    margin-right: -20px;
+    margin-left: -20px;   
+}
+
+.posting-gdpr-article__title {
+    @include text-title;
+    color: var(--color-main);
+    font-weight: 600;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.posting-gdpr-article__date {
+    @include text-caption;
+    color: var(--color-grey-text);
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding-bottom: 40px;
+    border-bottom: 4px solid var(--color-grey-bg-alt);
+}
+
+.posting-gdpr-article__text {
+   @include text-body;
+   padding-bottom: 40px; 
+}
+
+.posting-gdpr-article__text__title {
+    padding-bottom: 20px; 
+    padding-top: 40px;
+}
+
+.posting-gdpr-article__accent {
+    @include text-head;
+    @include text-gradient;
+    font-weight: bold;
+    padding-bottom: 40px;
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
+.posting-gdpr-article__list-title {
+    @include text-subheader;
+    color: var(--color-main);
+    font-weight: 600;
+    padding-bottom: 18px;
+}
+
+.posting-gdpr-article__list {
+    margin-left: 20px;
+}
+
+
+.posting-gdpr-article__list-item {
+    @include text-body;
+    padding-bottom: 25px;
+    list-style: decimal;
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+.posting-gdpr-article__list-item-wrapper {
+    color: black;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.posting-gdpr-article__example {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.posting-gdpr-article__explanation {
+    @include paragraph-min;
+    color: var(--color-grey-text);
+}
+
+.posting-gdpr-article__subtitle {
+    @include text-subheader;
+    color: var(--color-main);
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+.posting-gdpr-article__medias {
+    display: flex;
+    gap:10px;
+    align-items: baseline;
+    border-top: 4px solid var(--color-grey-separator);
+    padding-top: 20px;
+
+}
+
+.posting-gdpr-article__media-logo {
+    background-color: #F5F5FA;
+    padding: 9px;
+    border-radius: 12px;
+}
+
+

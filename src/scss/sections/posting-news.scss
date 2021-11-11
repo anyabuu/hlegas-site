@@ -1,0 +1,129 @@
+.posting-news {
+    background-color: var(--color-grey-bg);
+    border-radius: 12px 12px 0px 0px;
+}
+
+.posting-cards__switchers {
+    display: flex;
+    padding: 10px;
+    background: #E6E6F0;
+    border-radius: 12px;
+    width: 260px;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+
+
+}
+
+
+.sect__input {
+    appearance: none;
+    position:absolute;
+    
+   
+
+    &:hover ~ .sect__txt {
+        background-color: var(--color-grey-bg-alt);
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    &:checked ~ .sect__txt {
+        background-color: var(--color-white);
+        padding: 5px;
+        border-radius: 10px;
+    } 
+}
+
+.sect__txt {
+    @include text-caption;
+    font-weight: bold;
+    color: var( --color-main);
+    
+
+    @include media-phone {
+        color: var(--color-grey-text);
+    }
+}
+
+
+.posting-news__table {
+    display: flex;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.posting-news__cards-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: auto;
+}
+    
+.posting-news__cards-item {
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    align-self: stretch;
+    width: auto;
+}
+
+.posting-news__card-content-wrapper {
+    padding: 21px;
+}
+
+.posting-news__cards-subtitle {
+    @include text-small;
+    color: var(--color-active-regular);
+    font-weight: 600;
+}
+
+.posting-news__card-date {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: var(--color-grey-text);
+    line-height: (14/12);
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 4px solid var(--color-grey-separator);
+    padding-top: 12px;  
+    padding-bottom: 20px;
+
+    @include media-phone {
+        border:none;
+        padding-bottom: 0px;
+    }
+}
+
+.posting-news__card-content {
+    @include paragraph-min;
+    padding-top: 15px;
+
+
+}
+
+.posting-news__button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.posting-news__button {
+    @include button;
+    @include button-content;
+    margin-bottom: 60px;
+
+    @include media-tablet {
+        transform: none;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    @include media-phone {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}

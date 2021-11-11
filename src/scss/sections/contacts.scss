@@ -1,0 +1,106 @@
+.contacts__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px; 
+}
+
+.contacts__info {
+    @include text-introduction;
+    width: 414px;
+}
+
+.contacts__adress {
+    color: var(--color-main);
+    padding-bottom: 20px;
+    border-bottom: 4px solid var(--color-grey-separator);
+}
+
+.contacts__phone {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 4px solid var(--color-grey-separator);
+}
+
+.contacts__adress-number {
+    color: var(--color-alternative);
+    padding-bottom: 20px;
+}
+
+.contacts__adress-mail {
+    color: var(--color-active-regular);
+}
+
+.contacts__facebook {
+    padding-top: 20px;
+    display: flex;
+    gap:13px;
+    align-items: center;
+}
+
+.contacts__facebook-link {
+    @include text-caption;
+    color: var(--color-active-regular);
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 19px;
+}
+
+.contacts__help-title {
+    @include text-gradient;
+    @include text-title;
+    font-weight: bold;
+}
+
+.contacts__help-form {
+    padding: 20px;
+    background-color: var(--color-grey-bg);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacts__form {
+    width: 100%;
+    height: 47px;
+    border-radius: 8px;
+    border: 0px;
+}
+
+.contacts__form-text {
+    @include text-caption;
+    color: var(--color-grey-text);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contacts__form::placeholder {
+    color:var(--color-grey-text);
+    @include text-body;
+    padding: 10px;
+    font-family: "TTNorms";
+
+}
+
+.contacts__form #message {
+    height: 140px;
+    resize: none;
+}
+
+.contacts-area {
+    height: 180px;
+    resize: none;
+}
+
+.contacts__button {
+    @include button;
+    @include button-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contacts__map {
+    width: 100%;
+}

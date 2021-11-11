@@ -1,0 +1,55 @@
+.about-comanda {
+    padding-bottom: 80px;
+}
+
+.about-comanda__image {
+    width: 100%;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.about-comanda__title-wapper {
+    background-image: url("../img/comanda.jpg");
+    height: 438px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-comanda__title {
+    font-size: 9.6rem;
+    font-weight: bold;
+    color: var(--color-white);
+    letter-spacing: 63px;
+    text-transform: uppercase;
+    opacity: 0.8;
+    text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);  
+    position: absolute; 
+}
+
+
+.about-comanda__container {
+    display: flex;
+    gap: 40px;
+    padding-top: 80px;
+}
+
+.about-comanda__content {
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-comanda__text {
+    @include text-introduction;
+}
+
+.about-comanda__subtitle {
+    @include text-head;
+    @include text-gradient;
+    font-weight: bold;
+    width: 412px;
+}

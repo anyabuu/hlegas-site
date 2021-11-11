@@ -1,0 +1,33 @@
+.about-progress {
+    background-color: var(--color-grey-bg);
+}
+
+.about-progress__title {
+    color: var(--color-main);
+    @include text-caption;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 28px;
+}
+
+.about-progress__awards {
+    display: flex;
+    gap: 40px;
+    padding: 30px;
+}
+
+.about-progress__awards-item {
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-progress__dots-group {
+    @include dots-menu;
+    padding-bottom: 30px;
+}

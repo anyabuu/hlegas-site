@@ -11,6 +11,13 @@
     margin-right: auto;
     padding-bottom: 80px;
     padding-top: 30px;
+
+    @include media-phone {
+        @include text-title;
+        width: auto;
+        padding-bottom: 20px;
+        padding-top: 0px;
+    }
 }
 
 .team__people {
@@ -18,16 +25,54 @@
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
+
+    @include media-phone {
+        justify-content: flex-start;
+    }
+}
+
+.team__member {
+    &:nth-child(4) {
+        @include media-phone {
+            order: 5;
+        }
+    }
+    &:nth-child(5) {
+        @include media-phone {
+            order: 4;
+        }
+    }
+    &:nth-child(6) {
+        @include media-phone {
+            order: 3;
+        }
+    }
+
+    @include media-phone {
+        display: flex;
+        gap: 20px;
+    }
 }
 
 .team__description {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include media-phone {
+       flex-direction: column;
+       justify-content: flex-end;
+       align-items: flex-start;
+       gap: 10px;
+    }
 }
 
-.team__photo{
+.team__photo {
     border-radius: 12px;
+
+    @include media-phone {
+        height: 191px;
+    }
 }
 
 .team__member-name {

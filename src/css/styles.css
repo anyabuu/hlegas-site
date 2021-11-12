@@ -1865,6 +1865,199 @@ body {
       display: flex;
       gap: 14px; } }
 
+.team-header {
+  color: var(--color-grey-text);
+  display: flex;
+  flex-direction: column;
+  padding: 50px; }
+  @media (max-width: 1200px) {
+    .team-header {
+      min-height: auto;
+      padding: 20px;
+      padding-left: 0px;
+      padding-right: 0px; } }
+
+.team-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media (max-width: 767px) {
+    .team-header__container {
+      flex-direction: column;
+      align-items: normal; } }
+
+@media (max-width: 767px) {
+  .team-header__logo-group {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; } }
+
+@media (max-width: 767px) {
+  .team-header__logo-group .team-header__image {
+    height: 31px; } }
+
+.team-header__menu-wrapper {
+  display: flex;
+  align-items: baseline; }
+  @media (max-width: 767px) {
+    .team-header__menu-wrapper {
+      gap: 2px; } }
+
+.team-header__caption {
+  font-size: 4.2rem;
+  line-height: 1.19048;
+  color: var(--color-main);
+  font-weight: 400; }
+  .team-header__caption:before {
+    content: '/';
+    display: inline-block;
+    width: 21px;
+    padding-left: 2px;
+    color: var(--color-accent);
+    font-weight: bold;
+    font-size: 5.5rem; }
+    @media (max-width: 767px) {
+      .team-header__caption:before {
+        width: 8px;
+        padding-left: 0px;
+        font-weight: 600;
+        font-size: 3rem; } }
+  @media (max-width: 1200px) {
+    .team-header__caption {
+      font-size: 2.8rem; } }
+  @media (max-width: 767px) {
+    .team-header__caption {
+      font-size: 1.6rem;
+      line-height: 1.375; } }
+
+.team-header__image-p {
+  position: relative;
+  bottom: 10px; }
+  @media (max-width: 767px) {
+    .team-header__image-p {
+      height: 23px;
+      bottom: 5px;
+      left: 1px; } }
+
+.team-header__block {
+  display: flex;
+  flex-direction: column;
+  gap: 19px; }
+  @media (max-width: 1200px) {
+    .team-header__block {
+      align-items: flex-end; } }
+  @media (max-width: 767px) {
+    .team-header__block {
+      align-items: normal;
+      order: 0; } }
+
+.team-header__options {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.07143; }
+  @media (max-width: 1200px) {
+    .team-header__options {
+      gap: 25px; } }
+  @media (max-width: 767px) {
+    .team-header__options {
+      justify-content: space-between; } }
+
+.team-header__options-item {
+  display: flex;
+  gap: 10px; }
+  .team-header__options-item::after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-grey-separator);
+    align-self: center; }
+    @media (max-width: 1200px) {
+      .team-header__options-item::after {
+        display: none; } }
+  .team-header__options-item:last-child::after {
+    display: none; }
+  .team-header__options-item:nth-child(1)::after {
+    display: none; }
+  @media (max-width: 1200px) {
+    .team-header__options-item:nth-child(2) {
+      display: none; }
+    .team-header__options-item:nth-child(4) {
+      display: none; } }
+
+.lang__input {
+  appearance: none;
+  position: absolute; }
+  .lang__input:hover ~ .lang__txt {
+    background-color: var(--color-grey-bg-alt);
+    color: var(--color-grey-text);
+    padding: 5px;
+    border-radius: 8px; }
+  .lang__input:checked ~ .lang__txt {
+    background-color: var(--color-accent);
+    padding: 5px;
+    color: var(--color-white);
+    border-radius: 8px; }
+
+.lang__txt {
+  font-size: 1.4rem;
+  line-height: 1.07143;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px; }
+  @media (max-width: 767px) {
+    .lang__txt {
+      color: var(--color-grey-text); } }
+
+.team-header__options-adress {
+  font-weight: 400; }
+
+@media (max-width: 767px) {
+  .team-header__options-tel {
+    color: var(--color-grey-text); } }
+
+.team-header__options-facebook-link .team-header__facebook-img-hover {
+  display: none; }
+
+.team-header__options-facebook-link:hover .team-header__facebook-img {
+  display: none; }
+
+.team-header__options-facebook-link:hover .team-header__facebook-img-hover {
+  display: inline;
+  width: 24px;
+  height: 24px; }
+
+.team-header__nav-img {
+  display: none; }
+  @media (max-width: 767px) {
+    .team-header__nav-img {
+      display: block;
+      width: 32px; } }
+
+.team-header__list {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  font-size: 1.8rem;
+  line-height: 1.16667;
+  font-weight: 600;
+  color: var(--color-active-regular); }
+  @media (max-width: 767px) {
+    .team-header__list {
+      display: none; } }
+
+.team-header__list-item:hover {
+  color: var(--color-accent); }
+
+.team-header__list-item:active {
+  padding-bottom: 3px;
+  border-bottom: 3px solid var(--color-accent); }
+
 .team-container {
   padding-bottom: 60px; }
 
@@ -1880,20 +2073,56 @@ body {
   margin-right: auto;
   padding-bottom: 80px;
   padding-top: 30px; }
+  @media (max-width: 767px) {
+    .team__title {
+      font-size: 3.2rem;
+      line-height: 1.15625;
+      width: auto;
+      padding-bottom: 20px;
+      padding-top: 0px; } }
 
 .team__people {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center; }
+  @media (max-width: 767px) {
+    .team__people {
+      justify-content: flex-start; } }
+
+@media (max-width: 767px) {
+  .team__member:nth-child(4) {
+    order: 5; } }
+
+@media (max-width: 767px) {
+  .team__member:nth-child(5) {
+    order: 4; } }
+
+@media (max-width: 767px) {
+  .team__member:nth-child(6) {
+    order: 3; } }
+
+@media (max-width: 767px) {
+  .team__member {
+    display: flex;
+    gap: 20px; } }
 
 .team__description {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media (max-width: 767px) {
+    .team__description {
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      gap: 10px; } }
 
 .team__photo {
   border-radius: 12px; }
+  @media (max-width: 767px) {
+    .team__photo {
+      height: 191px; } }
 
 .team__member-name {
   font-size: 1.8rem;

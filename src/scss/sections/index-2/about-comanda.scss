@@ -1,14 +1,13 @@
 .about-comanda {
     padding-bottom: 80px;
+
+    @include media-phone {
+        padding-bottom: 40px;
+     }
 }
 
-.about-comanda__image {
-    width: 100%;
-    padding-bottom: 80px;
-    position: relative;
-}
 
-.about-comanda__title-wapper {
+.about-comanda__title-wrapper {
     background-image: url("../img/comanda.jpg");
     height: 438px;
     background-repeat: no-repeat;
@@ -16,6 +15,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center;
+
+
+    @include media-phone {
+       height: 290px;
+    }
 }
 
 .about-comanda__title {
@@ -26,14 +31,27 @@
     text-transform: uppercase;
     opacity: 0.8;
     text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);  
-    position: absolute; 
-}
+    position: absolute;
 
+    @include media-tablet {
+        @include text-title;
+    }
+    
+    @include media-phone {
+        letter-spacing: 20px;
+    }
+}
 
 .about-comanda__container {
     display: flex;
     gap: 40px;
     padding-top: 80px;
+
+    @include media-tablet {
+        flex-direction: column;
+        padding-top: 20px;
+        gap: 20px;
+    }
 }
 
 .about-comanda__content {
@@ -41,10 +59,19 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @include media-tablet {
+        width: auto
+    }
 }
 
 .about-comanda__text {
     @include text-introduction;
+
+    @include media-phone {
+       @include text-body;
+       gap: 10px;
+    }
 }
 
 .about-comanda__subtitle {
@@ -52,4 +79,12 @@
     @include text-gradient;
     font-weight: bold;
     width: 412px;
+
+    @include media-tablet {
+        width: auto;
+     }
+
+    @include media-phone {
+        @include text-title;
+     }
 }

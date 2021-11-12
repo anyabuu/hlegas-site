@@ -70,6 +70,18 @@ body {
     width: 1100px;
     margin-right: auto;
     margin-left: auto;
+
+    @include media-tablet {
+        width: 90%;
+    }
+
+    @include media-phone {
+        width: 85%;
+    }
+
+    @include media-laptop-m {
+        width: 90%;
+    }
 }
 
 .mini-container {

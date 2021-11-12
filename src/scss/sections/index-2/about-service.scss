@@ -1,13 +1,22 @@
 .about-service {
     padding-bottom: 100px;
     padding-top: 50px;
-}
 
+    @include media-phone {
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+}
 
 .about-service__container {
     display: flex;
     gap: 42px;
     align-items: baseline;
+
+    @include media-phone {
+       flex-direction: column;
+       gap: 20px;
+    }
 }
 
 .about-service__indication {
@@ -15,6 +24,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @include media-phone {
+        width: auto;
+    }
 }
 
 .about-service__reach {
@@ -25,6 +38,16 @@
     height: 307px;
     border-left: 4px solid var(--color-grey-separator);
     width: 412px;
+
+    @include media-phone {
+        width: auto;
+        border-top: 4px solid var(--color-grey-separator);
+        border-left: none;
+        gap: 20px;
+        height: auto;
+        padding-bottom: 34px;
+        padding-top: 15px;
+    }
 }
 
 .about-service__wrapper {
@@ -37,11 +60,19 @@
     @include text-head;
     @include text-gradient;
     font-weight: bold;
+
+    @include media-phone {
+        @include text-title; 
+    }
 }
 
 .about-service__text {
     @include text-introduction;
     font-weight: 400;
+
+    @include media-phone {
+        @include text-body; 
+    }
 }
 
 .about-service__reach-subtitle {

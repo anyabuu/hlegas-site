@@ -88,6 +88,15 @@ body {
     width: 906px;
     margin-right: auto;
     margin-left: auto;
+
+    @include media-tablet {
+        width: 90%;
+    }
+
+    @include media-phone {
+        width: 90%;
+    }
+
 }
 
 

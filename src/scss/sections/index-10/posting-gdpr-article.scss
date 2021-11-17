@@ -4,8 +4,13 @@
 }
 
 .posting-gdpr-article__image {
-    margin-right: -20px;
-    margin-left: -20px;   
+    margin-right: auto;
+    margin-left: auto;  
+    display: block;
+    
+    @include media-tablet {
+        width: 100%;
+    }
 }
 
 .posting-gdpr-article__title {
@@ -14,6 +19,10 @@
     font-weight: 600;
     padding-top: 40px;
     padding-bottom: 10px;
+
+    @include media-phone {
+        @include text-subheader;
+    }
 }
 
 .posting-gdpr-article__date {
@@ -42,6 +51,12 @@
     padding-bottom: 40px;
     margin-right: -20px;
     margin-left: -20px;
+
+    @include media-phone {
+        @include text-title;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .posting-gdpr-article__list-title {
@@ -49,6 +64,10 @@
     color: var(--color-main);
     font-weight: 600;
     padding-bottom: 18px;
+
+    @include media-phone {
+        @include text-small;
+    }
 }
 
 .posting-gdpr-article__list {
@@ -75,6 +94,12 @@
     padding-bottom: 40px;
 }
 
+.posting-gdpr-article__image-window {
+    @include media-phone {
+        width: 100%;
+    }
+}
+
 .posting-gdpr-article__explanation {
     @include paragraph-min;
     color: var(--color-grey-text);
@@ -85,6 +110,11 @@
     color: var(--color-main);
     font-weight: 600;
     padding-bottom: 25px;
+
+
+    @include media-phone {
+        @include text-small;
+    }
 }
 
 .posting-gdpr-article__medias {
@@ -94,6 +124,10 @@
     border-top: 4px solid var(--color-grey-separator);
     padding-top: 20px;
 
+
+    @include media-phone {
+        justify-content: center;
+    }
 }
 
 .posting-gdpr-article__media-logo {

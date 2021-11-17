@@ -2,12 +2,35 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: var(--color-main);
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include media-phone {
+        display: block;
+        position: unset;
+    }
 }
 
+.block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-main);
+    opacity: 0.7;
+
+    @include media-phone {
+        display: none;
+    }
+}
+
+.help-window__container {
+    position: absolute;
+
+    @include media-phone {
+        position: inherit;
+    }
+}
 
 .help-window__block {
     padding: 20px;
@@ -17,7 +40,12 @@
     flex-direction: column;
     gap: 20px;
     width: 507px;
- 
+
+    @include media-phone {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0px;
+    }
 }
 
 
@@ -27,6 +55,11 @@
     font-weight: bold;
     display: flex;
     justify-content: space-between;
+
+    @include media-phone {
+        @include text-subheader;
+        font-weight: 600;
+    }
 }
 
 .help-window__close {

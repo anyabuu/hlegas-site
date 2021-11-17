@@ -1,59 +1,77 @@
 .posting-news {
     background-color: var(--color-grey-bg);
     border-radius: 12px 12px 0px 0px;
+    padding-top: 40px;
+
+    @include media-phone {
+        padding-top: 20px;
+    }
 }
 
 .posting-cards__switchers {
     display: flex;
-    padding: 10px;
+    padding: 4px;
     background: #E6E6F0;
     border-radius: 12px;
     width: 260px;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
-
-
 }
 
+.posting-cards__switchers-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 127px;
+}
 
 .sect__input {
     appearance: none;
     position:absolute;
-    
-   
 
     &:hover ~ .sect__txt {
         background-color: var(--color-grey-bg-alt);
-        padding: 5px;
         border-radius: 10px;
+        height: 36px;
     }
 
     &:checked ~ .sect__txt {
         background-color: var(--color-white);
-        padding: 5px;
         border-radius: 10px;
+        width: 127px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     } 
 }
 
 .sect__txt {
     @include text-caption;
     font-weight: bold;
-    color: var( --color-main);
-    
-
-    @include media-phone {
-        color: var(--color-grey-text);
-    }
+    color: var( --color-main); 
 }
-
 
 .posting-news__table {
     display: flex;
     gap: 40px;
     padding-top: 40px;
     padding-bottom: 40px;
+
+
+    @include media-tablet {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    @include media-phone {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        flex-wrap: nowrap;
+    }
 }
 
 .posting-news__cards-column {
@@ -61,6 +79,28 @@
     flex-direction: column;
     gap: 40px;
     width: auto;
+
+    &:nth-child(3) {
+        @include media-tablet {
+            display: none;
+        }
+        @include media-phone {
+            display: flex;
+        }
+    }
+
+    @include media-laptop-m {
+        width: 360px;
+    }
+
+  @include media-tablet {
+        width: 45%;
+    }
+
+    @include media-phone {
+        gap:20px;
+        width: auto;
+    }
 }
     
 .posting-news__cards-item {
@@ -70,6 +110,17 @@
     border-radius: 8px;
     align-self: stretch;
     width: auto;
+
+    &:nth-child(3) {
+        @include media-phone {
+            display: none;
+        }
+    }
+    &:nth-child(4) {
+        @include media-phone {
+            display: none;
+        }
+    }
 }
 
 .posting-news__card-content-wrapper {
@@ -103,7 +154,9 @@
     @include paragraph-min;
     padding-top: 15px;
 
-
+    @include media-phone {
+       display: none;
+    }
 }
 
 .posting-news__button-wrapper {

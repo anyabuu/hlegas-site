@@ -3,13 +3,14 @@
 @import "mixins.scss";
 @import "general.scss";
 @import "components/button.scss";
-@import "sections/hero.scss";
-@import "sections/experience-services.scss";
-@import "sections/comand.scss";
-@import "sections/case.scss";
-@import "sections/trust.scss";
-@import "sections/publication.scss";
-@import "sections/footer.scss";
+
+@import "sections/index/hero.scss";
+@import "sections/index/experience-services.scss";
+@import "sections/index/comand.scss";
+@import "sections/index/case.scss";
+@import "sections/index/trust.scss";
+@import "sections/index/publication.scss";
+@import "sections/index/footer.scss";
 
 @import "sections/index-2/header-about.scss";
 @import "sections/index-2/about-service.scss";
@@ -38,8 +39,8 @@
 
 @import "sections/index-8/help-window.scss";
 
-@import "sections/posting-header.scss";
-@import "sections/posting-news.scss";
+@import "sections/index-9/posting-header.scss";
+@import "sections/index-9/posting-news.scss";
 
 @import "sections/index-10/posting-gdpr-header.scss";
 @import "sections/index-10/posting-gdpr-article.scss";

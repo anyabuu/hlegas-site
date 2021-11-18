@@ -2,7 +2,8 @@
     color: var(--color-grey-text);
     display:flex;
     flex-direction: column;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     @include media-tablet {
         min-height: auto;

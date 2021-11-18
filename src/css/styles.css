@@ -1445,7 +1445,8 @@ body {
   color: var(--color-grey-text);
   display: flex;
   flex-direction: column;
-  padding: 50px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
   @media (max-width: 1200px) {
     .header-about {
       min-height: auto;
@@ -1875,7 +1876,8 @@ body {
   color: var(--color-grey-text);
   display: flex;
   flex-direction: column;
-  padding: 50px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
   @media (max-width: 1200px) {
     .team-header {
       min-height: auto;
@@ -2079,11 +2081,13 @@ body {
   margin-right: auto;
   padding-bottom: 80px;
   padding-top: 30px; }
+  @media (max-width: 1200px) {
+    .team__title {
+      width: auto; } }
   @media (max-width: 767px) {
     .team__title {
       font-size: 3.2rem;
       line-height: 1.15625;
-      width: auto;
       padding-bottom: 20px;
       padding-top: 0px; } }
 
@@ -2165,13 +2169,13 @@ body {
   color: var(--color-grey-text);
   display: flex;
   flex-direction: column;
-  padding: 50px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
   @media (max-width: 1200px) {
     .profile-header {
       min-height: auto;
-      padding: 20px;
-      padding-left: 0px;
-      padding-right: 0px; } }
+      padding-top: 20px;
+      padding-bottom: 0px; } }
 
 .profile-header__container {
   display: flex;
@@ -2448,12 +2452,12 @@ body {
   color: var(--color-grey-text);
   display: flex;
   flex-direction: column;
-  padding: 50px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
   @media (max-width: 1200px) {
     .contacts-header {
-      padding: 20px;
-      padding-left: 0px;
-      padding-right: 0px; } }
+      padding-top: 20px;
+      padding-bottom: 0px; } }
 
 .contacts-header__container {
   display: flex;
@@ -3236,7 +3240,8 @@ body {
   background-image: url("../img/keyboard-cover.png"), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   background-repeat: no-repeat;
   border-radius: 0px 0px 12px 12px;
-  position: relative; }
+  position: relative;
+  background-size: 100%; }
   .it-provider-header__wrapper::before {
     content: '';
     display: block;
@@ -3884,6 +3889,11 @@ body {
       height: 100vh;
       border-radius: 0px; } }
 
+.help-window__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline; }
+
 .help-window__title {
   background: var(--color-red-text);
   -webkit-background-clip: text;
@@ -3900,7 +3910,6 @@ body {
       font-weight: 600; } }
 
 .help-window__close {
-  position: relative;
   width: 32px;
   height: 32px;
   text-align: center; }
@@ -3965,12 +3974,12 @@ body {
   color: var(--color-grey-text);
   display: flex;
   flex-direction: column;
-  padding: 50px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
   @media (max-width: 1200px) {
     .posting-header {
-      padding: 20px;
-      padding-left: 0px;
-      padding-right: 0px; } }
+      padding-top: 20px;
+      padding-bottom: 20px; } }
 
 .posting-header__container {
   display: flex;
@@ -4206,6 +4215,9 @@ body {
   gap: 40px;
   padding-top: 40px;
   padding-bottom: 40px; }
+  @media (max-width: 1320px) {
+    .posting-news__table {
+      gap: 0px; } }
   @media (max-width: 1200px) {
     .posting-news__table {
       justify-content: center;
@@ -4221,7 +4233,7 @@ body {
 .posting-news__cards-column {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  row-gap: 40px;
   width: auto; }
   @media (max-width: 1200px) {
     .posting-news__cards-column:nth-child(3) {
@@ -4237,7 +4249,7 @@ body {
       width: 45%; } }
   @media (max-width: 767px) {
     .posting-news__cards-column {
-      gap: 20px;
+      row-gap: 40px;
       width: auto; } }
 
 .posting-news__cards-item {
@@ -4253,6 +4265,9 @@ body {
   @media (max-width: 767px) {
     .posting-news__cards-item:nth-child(4) {
       display: none; } }
+  @media (max-width: 1320px) {
+    .posting-news__cards-item {
+      width: 90%; } }
 
 .posting-news__card-content-wrapper {
   padding: 21px; }
@@ -4323,12 +4338,12 @@ body {
   color: var(--color-grey-text);
   display: flex;
   flex-direction: column;
-  padding: 50px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
   @media (max-width: 1200px) {
     .posting-gdpr-header {
-      padding: 20px;
-      padding-left: 0px;
-      padding-right: 0px; } }
+      padding-top: 20px;
+      padding-bottom: 20px; } }
 
 .posting-gdpr-header__container {
   display: flex;
@@ -4378,7 +4393,7 @@ body {
         font-size: 3rem; } }
   @media (max-width: 1200px) {
     .posting-gdpr-header__caption {
-      font-size: 2.8rem; } }
+      font-size: 2.4rem; } }
   @media (max-width: 767px) {
     .posting-gdpr-header__caption {
       font-size: 1.6rem;

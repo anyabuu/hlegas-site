@@ -12,9 +12,12 @@
     padding-bottom: 80px;
     padding-top: 30px;
 
+    @include media-tablet {
+        width: auto;
+    }
+
     @include media-phone {
         @include text-title;
-        width: auto;
         padding-bottom: 20px;
         padding-top: 0px;
     }

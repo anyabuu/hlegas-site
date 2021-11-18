@@ -1,7 +1,6 @@
 .it-provider-header__wrapper {
     background-image: url("../img/keyboard-cover.png"),
-                    linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-    background-position: top, top, bottom;                
+                    linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);              
     background-repeat: no-repeat;
     border-radius: 0px 0px 12px 12px;
     position: relative;
@@ -42,11 +41,8 @@
     flex-direction: column;
 
     @include media-tablet {
-        min-height: auto;
-    }
-
-    @include media-phone {
-        min-height: 640px;
+        padding-top: 25px;
+        padding-bottom: 20px;
     }
 }
 
@@ -58,14 +54,31 @@
     @include media-phone {
         flex-direction: column;
         align-items: normal;
-        gap: 7px;
     }
 }
 
 .it-provider-header__logo-group {
+    @include media-phone {
+        order: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .it-provider-header__image {
+        @include media-phone {
+            height: 31px;
+        }
+    }
+}
+
+.it-provider-header__menu-wrapper {
     display: flex;
-    gap:2px;
     align-items: baseline;
+
+    @include media-phone {
+       gap: 2px;
+    }
 }
 
 .it-provider-header__caption {
@@ -73,7 +86,7 @@
     color: var(--color-white);
     font-weight: 400;
 
-    &:before{
+    &:before {
         content:'/';
         display: inline-block;
         width: 21px;
@@ -81,7 +94,33 @@
         color: var(--color-accent);
         font-weight: bold;
         font-size: 5.5rem;
+
+        @include media-phone {
+            width: 8px; 
+            padding-left: 0px;
+            font-weight: 600;
+            font-size: 3rem;
         }
+    }
+
+    @include media-tablet {
+        font-size: 2.8rem;
+    }
+
+    @include media-phone {
+        @include paragraph-min;
+    }
+}
+
+.it-provider-header__image-p { 
+    position: relative;
+    bottom: 10px;
+
+    @include media-phone {
+        height: 23px;
+        bottom: 5px;
+        left: 1px;
+    }
 }
 
 .it-provider-header__block {
@@ -96,6 +135,7 @@
     @include media-phone {
         align-items: normal;
         order: 0;
+        gap: 13px;
     }
 }
 
@@ -109,7 +149,6 @@
     @include media-tablet {
         gap: 25px;
     }
-
 
     @include media-phone {
         justify-content: space-between;

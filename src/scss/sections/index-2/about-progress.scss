@@ -30,10 +30,6 @@
     height: 100px;
     background-color: white;
     border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
 
     &:nth-child(3){
         @include media-phone {
@@ -52,6 +48,14 @@
         padding-top: 12px;
         padding-bottom: 12px;
     }
+}
+
+.about-progress__awards-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-progress__image {

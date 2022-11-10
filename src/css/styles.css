@@ -1970,6 +1970,7 @@ body {
 }
 
 .lang__txt {
+  cursor: pointer;
   font-size: 1.4rem;
   line-height: 1.0714285714;
   text-transform: uppercase;
@@ -2280,10 +2281,6 @@ body {
   height: 100px;
   background-color: white;
   border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
 }
 @media (max-width: 767px) {
   .about-progress__awards-item:nth-child(3) {
@@ -2302,6 +2299,14 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
   }
+}
+
+.about-progress__awards-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 767px) {
@@ -2711,7 +2716,7 @@ body {
   border: 2px solid;
   border-width: 0 2px 2px 0;
   display: inline-block;
-  padding: 4px;
+  padding: 3px;
   color: var(--color-active-regular);
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -3836,19 +3841,19 @@ body {
   }
 }
 
-.provider-card__cards-item {
+.provider-card__link {
   display: flex;
   flex-direction: column;
   width: 400px;
   gap: 18px;
 }
 @media (max-width: 1200px) {
-  .provider-card__cards-item {
+  .provider-card__link {
     width: auto;
   }
 }
 @media (max-width: 767px) {
-  .provider-card__cards-item {
+  .provider-card__link {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;

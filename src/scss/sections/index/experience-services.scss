@@ -98,12 +98,12 @@
     font-weight: 700;  
     text-align: right;
     padding-right:40px;
-    border-right: 4px solid transparent;
+    border-right: 5px solid transparent;
     transform: translate(44.4px);
 
     &:hover {
         @include text-gradient;
-         cursor: default;
+         cursor: pointer;
          border-right-color: var(--color-accent);
      }
 

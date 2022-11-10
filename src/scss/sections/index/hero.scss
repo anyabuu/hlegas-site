@@ -22,6 +22,10 @@
     flex-grow: 1;
     padding-top: #{$padding-page}px;
 
+    @include media-tablet {
+        padding-top: 25px;
+    }
+
     @include media-phone {
         gap:0px;
     }
@@ -237,10 +241,9 @@
     }
 }
 
-.hero__scroller {
+.hero__scroll-link {
     margin-left: auto;
     margin-right: auto;
-    display: flex;
     margin-bottom: 40px;
 }
 

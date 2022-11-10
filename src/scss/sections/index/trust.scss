@@ -34,10 +34,6 @@
 
 .trust__table-company {
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     &:nth-child(1) {
     background-color: #1C4280;
     }
@@ -86,6 +82,15 @@
         background-color:#000000;
         }
 
+}
+
+.trust__table-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 

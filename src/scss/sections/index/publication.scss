@@ -34,6 +34,7 @@
     height: 710px;
     overflow: hidden;
     position: relative;
+    justify-content: center;
 
     &::after {
         content: "";
@@ -60,7 +61,6 @@
     @include media-tablet {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
     }
 
     @include media-phone {
@@ -78,6 +78,7 @@
     flex-direction: column;
     border-radius: 8px;
     align-self: stretch;
+    cursor: pointer;
     
     &:nth-child(1) {
         grid-row: 1/2;
